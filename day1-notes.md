@@ -6,3 +6,4 @@ Faster and continuous software releases.
 Reduces manual errors through automation.
 Built-in Monitoring, detect failures or issues during delivery or in production.
 Automate testing throughout the software delivery process.
+ 
