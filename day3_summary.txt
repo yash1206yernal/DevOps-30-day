@@ -1,0 +1,10 @@
+✅ Day 3 - Linux Essentials II
+
+- Learned about users, groups, and file ownership
+- Practiced 'whoami', 'groups', 'ls -l'
+- Managed processes using 'ps', 'top', and 'kill'
+- Ran background jobs and killed them with their PID
+- Used networking commands like 'ping', 'ip a', 'curl'
+- Skipped commands not supported in browser terminal
+
+💡 Progressing well with Linux fundamentals!
