@@ -1,0 +1,9 @@
+✅ Day 2 - Linux Essentials I
+
+- Learned navigation commands: pwd, ls, cd, etc.
+- Performed file operations: mkdir, touch, cp, mv, rm
+- Understood and modified file permissions using chmod
+- Used nano editor to write and save files
+- Skipped apt/package manager due to browser limitations
+
+💪 Practiced commands using browser terminal (e.g., Webminal)
