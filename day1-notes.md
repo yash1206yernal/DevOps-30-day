@@ -7,3 +7,15 @@ Reduces manual errors through automation.
 Built-in Monitoring, detect failures or issues during delivery or in production.
 Automate testing throughout the software delivery process.
  
+# Day 1: DevOps Introduction
+
+## 🔁 DevOps Lifecycle:
+- Plan
+- Develop
+- Build
+- Test
+- Release
+- Deploy
+- Operate
+- Monitor
+
