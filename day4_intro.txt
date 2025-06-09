@@ -1,0 +1,5 @@
+✅ Day 4: Practicing Git with GitHub
+
+- Created a new repository
+- Learned about repositories, commits, and files
+- Using GitHub browser interface to simulate Git operations
