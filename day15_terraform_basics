@@ -1,0 +1,39 @@
+# Day 15 – Terraform Basics: AWS S3 Bucket
+
+This repository contains the Terraform configuration for Day 15 of the 30-Day DevOps Learning Challenge. The goal was to learn and apply the basics of Terraform by provisioning an AWS S3 bucket.
+
+## ✅ What I Learned
+
+- Installing and configuring Terraform CLI
+- Setting up AWS credentials securely
+- Writing a basic Terraform configuration (`main.tf`)
+- Initializing, planning, applying, and modifying infrastructure
+- Understanding and resolving deprecated arguments (`acl`)
+- Using `terraform apply`, `terraform destroy`, and `.gitignore` best practices
+
+---
+
+## 🛠 Technologies Used
+
+- **Terraform v1.x**
+- **AWS S3**
+- **VS Code**
+- **Git + GitHub**
+
+---
+
+## 📂 Files
+
+| File        | Description                                |
+|-------------|--------------------------------------------|
+| `main.tf`   | Main configuration file for S3 bucket      |
+| `.gitignore`| Ignores sensitive Terraform and state files|
+
+---
+
+## 🚀 How to Run
+
+1. Configure AWS CLI or export your keys:
+   ```bash
+   export AWS_ACCESS_KEY_ID=xxx
+   export AWS_SECRET_ACCESS_KEY=xxx
