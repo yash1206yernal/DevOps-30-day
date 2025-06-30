@@ -1,0 +1,40 @@
+# Day 17 – Kubernetes NGINX Deployment
+
+This project demonstrates a basic Kubernetes deployment of an NGINX web server using `kubectl` and `Minikube` on a local development environment.
+
+## 📦 Project Contents
+
+- `nginx-deployment.yaml`: Kubernetes manifest for deploying an NGINX pod.
+
+
+## 🚀 Deployment Steps
+
+### 1. Apply the Deployment
+```bash
+kubectl apply -f nginx-deployment.yaml
+
+2. Verify the Deployment
+
+kubectl get deployments
+kubectl get pods
+  
+3. Expose the Deployment (via NodePort or Port Forward)
+Option A: NodePort
+
+kubectl expose deployment nginx-deployment --type=NodePort --port=80
+minikube service nginx-deployment
+Option B: Port Forward (used when NodePort gives connection error)
+
+kubectl port-forward pod/nginx-deployment-<pod-id> 8080:80
+Then open: http://localhost:8080
+  
+🧰 Tools Used
+Minikube (Docker driver)
+kubectl
+Kubernetes (v1.36.0)
+NGINX
+
+📌 Learning Outcome
+Understanding basic deployments in Kubernetes
+Running and exposing an app using kubectl
+Troubleshooting common issues with Minikube on Windows
