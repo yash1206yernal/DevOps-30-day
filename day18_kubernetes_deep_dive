@@ -1,0 +1,53 @@
+📘 Day 18: Kubernetes Deep Dive – Deployments & Services
+
+✅ What We Did:
+Created a new Kubernetes deployment for a sample app:
+Used a deployment YAML (sample-deployment.yaml) to deploy 2 replicas of a sample container.
+
+Created a NodePort service to expose the app:
+Defined in sample-service.yaml with:
+
+yaml
+
+type: NodePort
+port: 80
+targetPort: 80
+Exposed the pods via a specific port on the node.
+
+Verified resources using kubectl:
+
+sh
+
+kubectl get deployments
+kubectl get pods
+kubectl get services
+Accessed services in browser:
+
+Minikube IP: 192.168.49.2
+Sample App URL: http://192.168.49.2:<NodePort> (e.g., 30036)
+Nginx App URL: http://192.168.49.2:31435
+Handled issues like "Connection Refused":
+Solved by starting minikube tunnel
+Ensured all terminals were running with admin rights.
+
+📁 Files Created:
+sample-deployment.yaml
+sample-service.yaml
+
+🔍 Commands Used:
+sh
+Copy
+Edit
+kubectl apply -f sample-deployment.yaml
+kubectl apply -f sample-service.yaml
+kubectl get pods
+kubectl get svc
+minikube tunnel
+
+
+📌 Concepts Covered:
+Deployments
+ReplicaSets
+Services (NodePort)
+Accessing services via browser using NodePort and Minikube IP
+
