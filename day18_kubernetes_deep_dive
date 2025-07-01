@@ -51,3 +51,16 @@ ReplicaSets
 Services (NodePort)
 Accessing services via browser using NodePort and Minikube IP
 
+ConfigMap & Secret
+
+## ✅ What I Did
+- Created a ConfigMap using `kubectl create configmap app-config --from-literal=APP_MODE=production`
+- Created a Secret using `kubectl create secret generic app-secret --from-literal=DB_PASSWORD=supersecret123`
+- Injected both into an Nginx Deployment as environment variables
+- Used `kubectl port-forward` to expose the pod
+- Verified the app running at `http://localhost:8080`
+
+## Files
+- `deployment.yaml`
+
+
