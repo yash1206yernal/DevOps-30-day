@@ -1,0 +1,27 @@
+# Day 20 - IaC + Kubernetes Project with Terraform and Helm
+
+This project demonstrates deploying a Kubernetes application on Minikube using Terraform as Infrastructure as Code and Helm for package management.
+
+## Features
+
+- Helm chart for web app deployment (Nginx)
+- Terraform configuration to automate Helm release
+- Smoke testing via port-forward and curl/browser
+
+## Usage
+
+1. Start Minikube: `minikube start`
+2. Initialize Terraform: `terraform init`
+3. Apply Terraform: `terraform apply`
+4. Verify pods: `kubectl get pods -n default`
+5. Port-forward service: `kubectl port-forward service/mywebapp 8080:80 -n default`
+6. Access app: open http://localhost:8080
+
+Tools & Technologies
+  
+Terraform (with Helm provider) for IaC
+Helm for Kubernetes package management
+Minikube local Kubernetes cluster
+kubectl for cluster interaction
+Docker Desktop for container runtime
+VS Code for development
