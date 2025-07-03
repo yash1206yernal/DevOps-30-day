@@ -1,0 +1,29 @@
+✅ Day 19: Helm Basics – GitHub Summary
+🔧 Tasks Completed:
+
+Installed Helm and verified installation.
+Created a custom Helm chart (mychart) for deploying an NGINX app.
+Used helm lint to validate chart structure.
+Packaged the chart using helm package.
+Installed the chart using helm install.
+Verified pod and service deployment with kubectl.
+Exposed the pod and tested using kubectl port-forward – confirmed NGINX welcome page.
+Upgraded the chart by modifying values.yaml and using helm upgrade.
+Viewed release history with helm history.
+Rolled back to an earlier revision using helm rollback.
+
+🧪 Tools Used:
+Helm
+Minikube
+kubectl
+Docker Desktop
+
+📝 Key Helm Commands:
+
+helm install myrelease ./mychart
+helm upgrade myrelease ./mychart
+helm rollback myrelease <revision>
+helm history myrelease
+
+🌐 Application Access:
+kubectl port-forward pod/<pod-name> 8080:80
