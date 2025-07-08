@@ -1,0 +1,42 @@
+# 🚀 Day 22: AWS Basics – DevOps 30-Day Mastery Plan
+
+## ✅ Objectives Covered:
+- Understand and explore key AWS services:
+  - IAM (Users, Policies)
+  - EC2 (Virtual Servers)
+  - S3 (Storage Buckets)
+  - VPC (Networking)
+- Install and configure AWS CLI
+- Create resources using AWS Console and CLI
+
+---
+
+## 🔧 Tools Used:
+- ✅ AWS Console (Web)
+- ✅ AWS CLI (v2)
+- ✅ Git Bash / Command Line
+- ✅ Key Pair (`devops-key.pem`)
+- ✅ Region used: `us-east-1` (can be changed)
+
+---
+
+## 🧪 Tasks Completed:
+
+### 1️⃣ IAM & AWS CLI
+- Created new IAM user with programmatic access
+- Configured CLI using `aws configure` with access keys
+
+### 2️⃣ EC2 Launch (via CLI)
+- Fetched Amazon Linux 2 AMI ID
+- Created Key Pair (`devops-key.pem`)
+- Created Security Group (`devops-sg`) with SSH + HTTP access
+- Launched EC2 instance
+- Connected using:
+```bash
+ssh -i devops-key.pem ec2-user@<public-ip>
+
+📚 Learnings
+IAM enables access control & security for users/services.
+EC2 provisioning & secure SSH is key to cloud infra setup.
+S3 is the backbone of object storage in AWS.
+VPC is core to networking; every resource is inside a VPC.
