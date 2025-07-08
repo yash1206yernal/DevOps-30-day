@@ -1,0 +1,42 @@
+# 📊 Day 23: Monitoring with Prometheus & Grafana
+
+## ✅ Objectives:
+- Deploy Prometheus and Grafana using Helm
+- Monitor Kubernetes cluster metrics
+- Visualize with dashboards in Grafana
+
+---
+
+## 🛠️ Setup Steps
+
+### 1️⃣ Add Helm Repositories:
+```bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo add grafana https://grafana.github.io/helm-charts
+helm repo update
+
+  2️⃣ Install Prometheus:
+helm install prometheus prometheus-community/prometheus
+  
+3️⃣ Install Grafana:
+helm install grafana grafana/grafana \
+  --set adminPassword='admin'
+  
+4️⃣ Access Grafana UI:
+kubectl port-forward svc/grafana 3000:80
+Then open http://localhost:3000
+Login credentials: admin / admin
+
+5️⃣ Connect Prometheus Data Source:
+In Grafana: Settings → Data Sources → Add Prometheus
+URL: http://prometheus-server
+
+6️⃣ Import Dashboard:
+Use Dashboard ID 6417 (Kubernetes Cluster Monitoring)
+
+📚 Learnings
+Prometheus enables powerful metric scraping and alerting.
+Grafana provides interactive dashboards and observability.
+Integration helps visualize cluster health and performance.
+
+✅ Day 23 completed successfully!
