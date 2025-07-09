@@ -1,0 +1,44 @@
+# 🗂️ Day 7 – Weekly Review & Mini Project
+
+This project is part of the **30-Day DevOps Mastery Plan**.  
+On Day 7, we focused on reviewing all foundational DevOps concepts learned during the first 6 days and applied them in a hands-on mini project.
+
+---
+
+## 📘 Topics Reviewed (Days 1–6)
+
+| Day | Focus Area       |
+|-----|------------------|
+| 1   | DevOps Fundamentals & SDLC |
+| 2   | Linux Basics & Commands    |
+| 3   | Git Essentials              |
+| 4   | Git Branching & Collaboration |
+| 5   | Advanced Git & Shell Scripting |
+| 6   | Shell Scripting Project     |
+
+---
+
+## ✅ Mini Project Overview
+
+### 📄 Project: Git + Bash Automation
+
+> Build a simple Git-powered automation script that:
+> - Initializes a Git repo
+> - Adds a README
+> - Commits changes
+> - Pushes to GitHub (via command line)
+> - Logs output to a text file
+
+---
+
+## 🛠️ Tools Used
+
+- **Git**
+- **Bash**
+- **GitHub CLI** (or Git remote)
+- **Linux Terminal / WSL**
+
+---
+
+## 📂 File Structure
+
