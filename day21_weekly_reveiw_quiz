@@ -1,0 +1,115 @@
+# 🧠 Day 21 – Weekly Review & Quiz (DevOps Fundamentals)
+
+This repository contains notes, quiz responses, and key revision areas from **Day 21** of the [30-Day DevOps Mastery Plan](#).  
+The purpose of Day 21 is to **review the past 3 weeks** of learning and test our understanding across core DevOps areas.
+
+---
+
+## 📋 Topics Covered
+
+| Topic       | Skills Reviewed |
+|-------------|------------------|
+| ✅ Linux     | Commands, permissions, file system |
+| ✅ Docker    | Images, containers, volumes, networking |
+| ✅ Jenkins   | Jobs, pipelines, CI/CD automation |
+| ✅ Terraform | Resources, providers, state files |
+| ✅ Kubernetes| Pods, Services, Deployments, ConfigMaps, Secrets |
+
+---
+
+## 🧪 Quiz Responses & Score Summary
+
+### ✅ Linux Quiz
+| Q | Your Answer | Result |
+|---|-------------|--------|
+| 1 | C           | ❌     |
+| 2 | B           | ❌     |
+| 3 | B           | ❌     |
+| 4 | A           | ❌     |
+| 5 | C           | ❌     |
+
+**Score:** 0/5 — Needs review
+
+---
+
+### ✅ Docker Quiz
+| Q | Your Answer | Result |
+|---|-------------|--------|
+| 1 | B           | ✅     |
+| 2 | B           | ✅     |
+| 3 | B           | ✅     |
+| 4 | D           | ❌     |
+| 5 | A           | ❌     |
+
+**Score:** 3/5 — Fair
+
+---
+
+### ✅ Jenkins Quiz
+| Q | Your Answer | Result |
+|---|-------------|--------|
+| 1 | C           | ✅     |
+| 2 | C           | ✅     |
+| 3 | C           | ✅     |
+| 4 | B           | ✅     |
+| 5 | C           | ✅     |
+
+**Score:** 5/5 — Excellent
+
+---
+
+### ✅ Terraform Quiz
+| Q | Your Answer | Result |
+|---|-------------|--------|
+| 1 | C           | ✅     |
+| 2 | C           | ✅     |
+| 3 | C           | ✅     |
+| 4 | B           | ✅     |
+| 5 | C           | ✅     |
+
+**Score:** 5/5 — Excellent
+
+---
+
+### ✅ Kubernetes Quiz
+| Q | Your Answer | Result |
+|---|-------------|--------|
+| 1 | B           | ✅     |
+| 2 | A           | ❌     |
+| 3 | D           | ✅     |
+| 4 | C           | ✅     |
+| 5 | C           | ✅     |
+
+**Score:** 4/5 — Strong
+
+---
+
+## 🧠 Areas to Revisit
+
+- Linux file permissions, `chmod`, and directory structure
+- Docker Compose and multi-container orchestration
+- Jenkinsfile syntax and shared library usage
+- Kubernetes services vs deployments
+
+---
+
+## ✅ Outcome
+
+- ✅ Self-assessed understanding of key DevOps areas
+- ✅ Identified weak spots to reinforce in future days
+- ✅ Cleaned up unused Docker and Terraform resources
+
+---
+
+## 🧹 Cleanup Performed
+
+```bash
+# Docker cleanup
+docker container prune
+docker image prune
+
+# Terraform cleanup (in projects)
+terraform destroy
+
+# Kubernetes cleanup
+kubectl delete all --all
