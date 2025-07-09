@@ -1,0 +1,71 @@
+# 📦 Day 24 – Centralized Logging with ELK Stack (Elasticsearch + Logstash + Kibana)
+
+This project is part of the **30-Day DevOps Mastery Plan**.  
+On Day 24, we deployed the complete ELK stack locally using Docker and streamed structured logs from a container into Kibana visualizations.
+
+---
+
+## 🎯 Objectives
+
+- Deploy Elasticsearch, Logstash, and Kibana using Docker Compose
+- Send container logs to Logstash via TCP
+- Store and index logs in Elasticsearch
+- View and analyze logs in Kibana Discover
+- Practice centralized logging architecture for containerized apps
+
+---
+
+## 🧰 Tech Stack
+
+- Docker
+- Docker Compose
+- Elasticsearch 7.17.0
+- Logstash 7.17.0
+- Kibana 7.17.0
+- Alpine Linux (for log simulation)
+- Custom Docker network
+
+---
+
+## 📂 Project Structure
+  day24-elk-logging/
+│
+├── docker-compose.yml # Deploys the full ELK stack
+├── logstash.conf # Logstash pipeline: input → output
+└── README.md # Project summary
+
+  └── README.md # Project summary
+
+yaml
+
+## ⚙️ Setup Instructions
+### 1. Create Docker network
+
+```bash
+docker network create elk-net
+2. Start ELK Stack
+bash
+
+docker-compose up -d
+Access:
+
+Kibana: http://localhost:5601
+Elasticsearch: http://localhost:9200
+
+📡 Send Logs to Logstash (Alpine Container)
+bash
+
+docker run --rm --network=elk-net alpine sh -c "apk add --no-cache netcat-openbsd && while true; do echo '{\"app\":\"myapp\",\"message\":\"Log entry from Alpine at '$(date)'\"}' | nc logstash 5000; sleep 2; done"
+This continuously sends JSON logs to Logstash over TCP.
+
+🔎 Visualize in Kibana
+Open Kibana → Discover
+Create index pattern: docker-logs-*
+Select @timestamp as time field
+View logs live in Discover tab!
+
+🧹 Cleanup
+bash
+
+docker-compose down -v
+docker network rm elk-net
